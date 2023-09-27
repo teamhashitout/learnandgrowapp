@@ -2,6 +2,9 @@ import { StyleSheet, Text, View } from "react-native";
 import { useRouter } from "expo-router";
 
 import Nav from "./components/Nav"
+import Footer from "./components/Footer";
+
+
 export default function Page() {
   return (
     <View style={styles.container}>
@@ -15,6 +18,7 @@ export default function Page() {
       <View style={styles.video_card}>
         <video_card/>
       </View>
+      <Footer style={styles.footer} />
     </View>
   );
 }
@@ -39,5 +43,8 @@ const styles = StyleSheet.create({
   user_name: {
     fontWeight: '700',
     fontSize: '22px',
+  },
+  footer:{
+    
   }
 });
