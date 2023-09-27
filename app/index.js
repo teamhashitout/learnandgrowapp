@@ -1,11 +1,19 @@
 import { StyleSheet, Text, View } from "react-native";
+import { useRouter } from "expo-router";
 
+import Nav from "./components/Nav"
 export default function Page() {
   return (
     <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}></Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
+      <View style={styles.nav}>
+        <Nav />
+      </View>
+      <View style={styles.user_greet}>
+        <Text style={styles.greet}>Hello</Text>
+        <Text style={styles.user_name}>Shreya</Text>
+      </View>
+      <View style={styles.video_card}>
+        <video_card/>
       </View>
     </View>
   );
@@ -13,22 +21,23 @@ export default function Page() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: "center",
-    padding: 24,
+    backgroundColor: '#FBF5F2',
+    width: '100%',
+    height: '100%',
+    paddingHorizontal: '5%',
+
   },
-  main: {
-    flex: 1,
-    justifyContent: "center",
-    maxWidth: 960,
-    marginHorizontal: "auto",
+  user_greet: {
+    width: '80px',
+    height: '40px'
   },
-  title: {
-    fontSize: 16,
-    fontWeight: "700",
+  greet: {
+    width: '18',
+    fontWeight: '500',
+
   },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
-  },
+  user_name: {
+    fontWeight: '700',
+    fontSize: '22px',
+  }
 });
