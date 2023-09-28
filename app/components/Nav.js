@@ -3,13 +3,14 @@ import { RiMenu3Fill } from 'react-icons/ri';
 import { PiUserCircleLight } from 'react-icons/pi';
 import { CgMenuRight } from 'react-icons/cg';
 import { BiSearchAlt } from 'react-icons/bi';
+import IonicIcons from 'react-native-vector-icons/Ionicons';
+
 
 const Nav = () => {
     return (
         <View style={styles.navigation}>
             <PiUserCircleLight style={styles.icon} />
-            <CgMenuRight style={styles.icon} />
-        </View>
+            <IonicIcons name="menu-outline" size={30} color="black" />        </View>
     )
 }
 

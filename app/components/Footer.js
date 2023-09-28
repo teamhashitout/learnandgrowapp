@@ -18,17 +18,17 @@ const Footer = () => {
             </Link>
             <Link href='/account'>
                 <TouchableOpacity onPress={() => console.log('Test Pressed')}>
-                <IonicIcons name="home-outline" size={30} color="black" />
+                <IonicIcons name="stats-chart-outline" size={30} color="black" />
                 </TouchableOpacity>
             </Link>
             <Link href='/chat'>
                 <TouchableOpacity onPress={() => console.log('Account Pressed')}>
-                <IonicIcons name="home-outline" size={30} color="black" />
+                <IonicIcons name="chatbubbles-outline" size={30} color="black" />
                 </TouchableOpacity>
             </Link>
             <Link href='/test'>
                 <TouchableOpacity onPress={() => console.log('Lectures Pressed')}>
-                <IonicIcons name="home-outline" size={30} color="black" />
+                <IonicIcons name="person-outline" size={30} color="black" />
                 </TouchableOpacity>
             </Link>
 
