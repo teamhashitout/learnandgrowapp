@@ -5,6 +5,8 @@ import { CgMenuRight } from 'react-icons/cg';
 import { BiSearchAlt } from 'react-icons/bi';
 
 
+
+
 const Nav = () => {
     return (
         <View style={styles.navigation}>
