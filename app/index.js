@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import { useRouter } from "expo-router";
-
 import Nav from "./components/Nav"
 import Footer from "./components/Footer";
+
+
+
 
 
 export default function Page() {
@@ -19,7 +21,9 @@ export default function Page() {
         <video_card/>
       </View>
       <Footer style={styles.footer} />
+     
     </View>
+
   );
 }
 
