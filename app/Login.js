@@ -12,7 +12,7 @@ const LoginScreen = () => {
             resizeMode='cover'
             style={styles.imageBg}
         >
-            <View style={styles.formContainer}>
+            <View  style={styles.formContainer}>
 
 
 
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     input: {
         backgroundColor: 'white',
         borderRadius: 10,
-        fontSize: '14',
+        fontSize: 14,
         textAlign: 'center',
         width: '60%',
         padding: 10,
@@ -99,16 +99,17 @@ const styles = StyleSheet.create({
     buttonText: {
         color: 'white',
         fontSize: 16,
-        fontWeight: '400',
+        fontWeight: 400,
     },
     imageBg: {
-        // flex: 1,
-        // justifyContent: 'center',
+
+        justifyContent: 'center',
         width: "100%",
         height: "100vh",
-        marginTop: "auto",
-        display: "cover"
+
     }
 });
 
 export default LoginScreen;
+
+
