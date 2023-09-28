@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
         boder: '2px black solid',
         color: 'red',
         marginTop: "auto",
+        marginHorizontal:'auto',
         width: "90%",
         backgroundColor: "#F5B3B9",
         marginBottom: "1rem",

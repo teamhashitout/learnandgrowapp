@@ -12,11 +12,8 @@ const Video_card = () => {
                     <View style={styles.card_content}>
                         <Text style={styles.card_title}>Mathematics</Text>
                         <Text style={styles.card_discription}>This is the app created for slow learners to cope up their learning skills</Text>
+                        <Button style={styles.button} title="continue" />
                     </View>
-                    <Button
-                        title="continue"
-                        onPress={() => Alert.alert('Simple Button pressed')}
-                    />
                 </View>
             </View>
         </View>
@@ -61,6 +58,9 @@ const styles = StyleSheet.create({
     card_title: {
         fontWeight: '600',
         lineHeight: '1.5'
+    },
+    button: {
+        width:'80px',
     },
     searchBar: {
         height: 40,
