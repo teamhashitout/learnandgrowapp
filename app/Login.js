@@ -1,28 +1,37 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, ImageBackground, Image } from 'react-native';
 
+const Bg = require('./images/Bg.jpg')
 
 const LoginScreen = () => {
     return (
 
-        
-        <View style={styles.formContainer}>
-            <TextInput
-                style={styles.input}
-                placeholder="Username"
-                placeholderTextColor="Black"
-            />
-            <TextInput
-                style={styles.input}
-                placeholder="Password"
-                placeholderTextColor="Black"
-                secureTextEntry={true}
-            />
-            <TouchableOpacity style={styles.button}>
-                <Text style={styles.buttonText}>login</Text>
-            </TouchableOpacity>
 
-        </View>
+        <ImageBackground
+            source={Bg}
+            resizeMode='cover'
+            style={styles.imageBg}
+        >
+            <View style={styles.formContainer}>
+
+
+
+                <TextInput
+                    style={styles.input}
+                    placeholder="Username"
+                    placeholderTextColor="Black"
+                />
+                <TextInput
+                    style={styles.input}
+                    placeholder="Password"
+                    placeholderTextColor="Black"
+                    secureTextEntry={true}
+                />
+                <TouchableOpacity style={styles.button}>
+                    <Text style={styles.buttonText}>login</Text>
+                </TouchableOpacity>
+            </View>
+        </ImageBackground>
 
     );
 };
@@ -32,9 +41,13 @@ const styles = StyleSheet.create({
         position: 'relative',
 
     },
+    profileimg: {
+        height: "6rem",
+        width: "6rem"
+    },
     formContainer: {
         position: 'absolute',
-        backgroundColor: '#F5B3B9',
+        // backgroundColor: '#F5B3B9',
         bottom: '0',
         height: '78%',
         width: '100%',
@@ -43,15 +56,15 @@ const styles = StyleSheet.create({
         marginTop: 'auto',
         marginBottom: 'auto',
         display: 'flex',
-        alignItems:'center',
+        alignItems: 'center',
         justifyContent: 'center',
         // borderRadius: '146px 151px 0px 0px',
         // -webkit-border-radius: '146px 151px 0px 0px', 
         // -moz-border-radius: '146px 151px 0px 0px',
-        borderTopRightRadius: '200px', 
-        borderTopLeftRadius: '200px', 
-        ImageBackground: '',
-        },
+        borderTopRightRadius: '50%',
+        borderTopLeftRadius: '50%',
+
+    },
     // heading: {
     //     fontSize: 24,
     //     fontWeight: 'bold',
@@ -88,6 +101,14 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: '400',
     },
+    imageBg: {
+        // flex: 1,
+        // justifyContent: 'center',
+        width: "100%",
+        height: "100vh",
+        marginTop: "auto",
+        display: "cover"
+    }
 });
 
 export default LoginScreen;
