@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         height: '60px',
     },
     icon: {
-        fontSize: "2.5rem"
+        fontSize:20
     }
 })
 export default Side_bar;

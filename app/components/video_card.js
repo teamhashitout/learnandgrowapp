@@ -8,7 +8,7 @@ const Video_card = () => {
 
             <View style={styles.video_scroll}>
                 <View style={styles.video_card}>
-                    <Image style={styles.videoIcon} source={require('../../assets/images/profile.png')} />
+                    <Image style={styles.videoIcon} source={require('../images/profile.png')} />
                     <View style={styles.card_content}>
                         <Text style={styles.card_title}>Mathematics</Text>
                         <Text style={styles.card_discription}>This is the app created for slow learners to cope up their learning skills</Text>
@@ -27,10 +27,10 @@ const styles = StyleSheet.create({
         marginVertical: '15px',
     },
     section_title: {
-        fontWeight: '600',
-        fontSize: '16px',
+        fontWeight: 600,
+        fontSize: 16,
         color: '#444444',
-        lineHeight: '2'
+        lineHeight: 2
     },
     video_scroll: {
         border: '1px solid #000000',
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         maxWidth: 'calc(100% - 100px)',
     },
     card_title: {
-        fontWeight: '600',
-        lineHeight: '1.5'
+        fontWeight: 600,
+        lineHeight: 1.5
     },
     button: {
         width:'80px',

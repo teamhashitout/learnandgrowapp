@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { useRouter } from "expo-router";
 import Nav from "./components/Nav"
 import Footer from "./components/Footer";
-import Video_card from "./components/video_card";
+import Video_card from "./components/Video_card";
 
 export default function Page() {
   return (
@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
   },
   greet: {
     width: '18',
-    fontWeight: '500',
+    fontWeight: 500,
 
   },
   user_name: {
-    fontWeight: '700',
-    fontSize: '22px',
+    fontWeight: 700,
+    fontSize: 22,
   },
   footer:{
     
