@@ -48,8 +48,8 @@ const styles = StyleSheet.create({
         // borderRadius: '146px 151px 0px 0px',
         // -webkit-border-radius: '146px 151px 0px 0px', 
         // -moz-border-radius: '146px 151px 0px 0px',
-        borderTopRightRadius: '200px', 
-        borderTopLeftRadius: '200px', 
+        borderTopRightRadius: '50%', 
+        borderTopLeftRadius: '50%', 
         ImageBackground: '',
         },
     // heading: {
